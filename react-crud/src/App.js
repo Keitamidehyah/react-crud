@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <h1>Hello,world!!</h1>
+    <React.Fragment>
+      <label htmlFor="bar">bar</label>
+      <input type="text" onChange={() => {console.log("I am clicked!")}} />
+    </React.Fragment>
   )
 }
 
